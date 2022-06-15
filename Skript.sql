@@ -7,6 +7,8 @@ CREATE TABLE expression (
     result DOUBLE NOT NULL
 )  ENGINE=INNODB DEFAULT CHARSET=UTF8MB4;
 
+
+#can be without this
 INSERT INTO `geeksForLess`.`expression` (`id`, `expression_value`, `result`) VALUES 
 ('1', '20-55+3+200+20-9', 179.0),
 ('2', '20+(50+10)-200/40', 75.0),
