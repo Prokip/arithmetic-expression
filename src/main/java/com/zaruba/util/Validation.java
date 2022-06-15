@@ -4,10 +4,10 @@ import com.zaruba.exception.ExpressionFormatException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -77,7 +77,7 @@ public class Validation {
     }
 
     public void isNullOrEmpty(String string) {
-        if(string == null || string.trim().isEmpty()){
+        if (string == null || string.trim().isEmpty()) {
             throw new ExpressionFormatException("Expression cant be empty");
         }
     }

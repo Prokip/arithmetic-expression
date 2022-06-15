@@ -58,9 +58,6 @@ public class LogicProcess {
         } catch (Exception exception) {
             logger.error("Program failed : ", exception);
             System.out.println("Something went wrong");
-        } finally {
-            MANAGER.close();
-            FACTORY.close();
         }
     }
 
